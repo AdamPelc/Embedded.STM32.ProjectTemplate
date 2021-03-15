@@ -1,1 +1,3 @@
+add_subdirectory(Configuration)
 add_subdirectory(Drivers)
+add_subdirectory(Core)
