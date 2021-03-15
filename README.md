@@ -2,6 +2,6 @@
 
 STM32 CMake Project Template
 
-## How to start 
+## Where is *"main.c(cpp)"*?
 
 TBD
