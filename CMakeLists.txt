@@ -30,6 +30,8 @@ project(STM32-Template C CXX ASM)
 ########################################################################################################################
 # COMPILER
 ########################################################################################################################
+# Compiler definitions
+add_definitions(${COMPILER_DEFINITIONS})
 # Compilation options
 add_compile_options(-mcpu=cortex-m4 -mthumb -mthumb-interwork)
 add_compile_options(-ffunction-sections -fdata-sections -fno-common -fmessage-length=0)
@@ -48,8 +50,6 @@ else ()
     add_compile_options(-Og -g)
     add_definitions(-DDEBUG)
 endif ()
-# Compiler definitions
-add_definitions(${COMPILER_DEFINITIONS})
 
 ########################################################################################################################
 # LINKER
